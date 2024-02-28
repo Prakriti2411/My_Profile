@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music ki duniya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+    
+    <ul>
+        <li><a href="#"><h3 class="color">Connect</h3></a></li>
+                <li><a href="#"><h3 class="color">About</h3></a></li>
+                    <li><a href="#"><h3 class="color">Home </h3></a></li> 
+    </ul>
+    <img alt src="nature-logo.png" class="logo">
+    <div class="content">
+        <div class="left-col">
+            <h1>Nature's love🎶<br>Therapy<br>for Ears</h1>
+        </div>
+        <div class="right-col">
+                <p>Click here to listen</p>
+         <img src="media/play-button.png" id="icon">
+        </div>
+    </div>
+    </div>
+    <video autoplay muted loop id="myVideo">
+        <source src="music background img.mp4" type="video/mp4">
+    </video>
+    <audio id="mySong">
+        <source src="media_play.mp3" type="audio/mp3">
+
+    </audio>
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+    icon.onclick = function() {
+        if(mySong.paused){
+            mySong.play();
+            icon.src = "play-button.png";
+        }else{
+            mySong.pause();
+            icon.src = "pause-button.png";
+        }
+     }
+</script>
+    
+</body>
+</html>

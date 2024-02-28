@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+.navbar{
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 4;
+    margin-top: 0px;
+}
+.navbar a {
+    display: flex;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+#myVideo{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 0%;
+
+}
+.color{
+    color: rgb(5, 179, 5);
+}
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 15px;
+    float: right;
+}
+.content{
+    z-index: 4;
+    position: fixed;
+    margin-left: 150px;
+    color:  rgb(5, 179, 5);
+    font-size: 35px;
+    float: left;
+}
+.right-col {
+    float: right;
+    
+    padding-left: 120px;
+    padding-top: 14px;
+    display: flex;
+    align-items: center;
+}
+.right-col p {
+    font-size: 19px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#icon{
+    width: 80px;
+    cursor: pointer;
+}
